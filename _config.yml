@@ -25,7 +25,8 @@ github_username:  phi0
 # Build settings
 markdown: kramdown
 # theme: fundamental
-remote_theme: theomjones/fundamental
+# remote_theme: theomjones/fundamental
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -52,3 +53,6 @@ enabled:
   # Enable RSS menu item
   # rss: false
   seo: true
+
+disqus:
+  shortname: phi0

@@ -1,0 +1,29 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+/* Base font family */
+$base-font-family: $font;
+/* Other font families */
+$headline-font-family: $base-font-family;
+$monospace-font-family: SFMono-Regular, Menlo, Consolas, Monaco, "Courier New", Courier,
+  monospace;
+
+/* Colors */
+$base-color: #393e46;
+$text-color: #222831;
+$accent-color: #22f;
+$background-color: #fbf9f9;
+$code-background-color: tint($base-color, 95%);
+$border-color: tint($base-color, 80%);
+$overlay-color: $base-color;
+
+
+// Theme skin
+@import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
+
+@import "basically-basic";
