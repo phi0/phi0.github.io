@@ -24,7 +24,7 @@ github_username:  phi0
 
 # Build settings
 markdown: kramdown
-theme: fundamental
+# theme: fundamental
 remote_theme: theomjones/fundamental
 plugins:
   - jekyll-feed
