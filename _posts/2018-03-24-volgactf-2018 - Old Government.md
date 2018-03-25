@@ -61,7 +61,7 @@ After a few tries on the pages, we found that the page with the id 18 has a form
 	(...)
 ```
 
-Judging by the name it seems that this one is ran on the site field of the post query. Judging by (OWASP - Ruby on Rails Cheatsheet)[https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet], `open` can be actually used to inject command.
+Judging by the name it seems that this one is ran on the site field of the post query. Judging by [OWASP - Ruby on Rails Cheatsheet](https://www.owasp.org/index.php/Ruby_on_Rails_Cheatsheet), `open` can be actually used to inject command.
 After some tries we can see that it works:
  * `site=| ls` show `validated`
  * `site=| aaaa` show `error`
