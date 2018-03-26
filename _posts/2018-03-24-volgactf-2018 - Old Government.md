@@ -19,7 +19,7 @@ On the backtrace, we could see part of the code.
 
 ### articles.erb
 ```ruby
-            case @id.to_i
+case @id.to_i
 
     when 2
       erb :page2
@@ -32,7 +32,6 @@ On the backtrace, we could see part of the code.
 
 ### app.rb
 ```ruby
-
         headers "Server" => ""
       	erb :index
       end
