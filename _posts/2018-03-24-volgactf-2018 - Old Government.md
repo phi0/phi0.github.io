@@ -1,9 +1,7 @@
 ---
 layout: post
 title: volgactf 2018 - Old Government
-author:
-  name: onionpsy
-  github: onionpsy
+author: onionpsy
 ---
 
 We started by checking the link on the header and we saw that an `id` is passed in the url with the id of the page: `page?id=36`. After some tries we found that we could crash the application by passing id as an array, like that : `page?id[]=36`.
