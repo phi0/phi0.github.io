@@ -25,15 +25,17 @@ $overlay-color: $base-color;
 
 // Elements
 code {
-    color: #924;
+    color: #ddd;
     font-size: 90%;
 }
 
 p code {
-    // font-size: 85%;
-    // background: #363636;
-    // color: #f3f3f3;
-    // padding: 2px 5px;
+    font-size: 85%;
+    background: #363636;
+    box-shadow: 3px 0 0 #363636, -3px 0 0 #363636;
+    margin: 0 3px;
+    color: #f3f3f3;
+    padding: 3px 3px;
 }
 
 // Theme skin
