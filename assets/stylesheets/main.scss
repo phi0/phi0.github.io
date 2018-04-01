@@ -1,29 +1,54 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @charset "utf-8";
 
-$font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-/* Base font family */
-$base-font-family: $font;
-/* Other font families */
-$headline-font-family: $base-font-family;
-$monospace-font-family: SFMono-Regular, Menlo, Consolas, Monaco, "Courier New", Courier,
-  monospace;
+// $font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// /* Base font family */
+$base-font-family: 'Merriweather', serif;
+// /* Other font families */
+$headline-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+// $monospace-font-family: SFMono-Regular, Menlo, Consolas, Monaco, "Courier New", Courier,
+//   monospace;
 
 /* Colors */
-$base-color: #393e46;
-$text-color: #222831;
-$accent-color: #22f;
-$background-color: #fbf9f9;
+$base-color: #353a41;
+$text-color: #242932;
+$accent-color: #34e;
+$background-color: #fbfbfb;
 $code-background-color: tint($base-color, 95%);
 $border-color: tint($base-color, 80%);
 $overlay-color: $base-color;
 
+// Elements
+code {
+    color: #924;
+    font-size: 90%;
+}
+
+p code {
+    // font-size: 85%;
+    // background: #363636;
+    // color: #f3f3f3;
+    // padding: 2px 5px;
+}
 
 // Theme skin
 @import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
 
 @import "basically-basic";
+
+// .sidebar-toggle-wrapper {
+//     left: 5vw;
+//     background-color: transparent;
+
+//     button {
+
+//         &.open {
+//             left: 20vw;
+//         }
+//     }
+// }

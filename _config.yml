@@ -14,13 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Phi0
-email: your-email@example.com
+email: phi0@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Phi0 Team Blog. Hacking, profit and fun
+  Phi0 Team Blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  phi0
+github_username: phi0
 
 # Build settings
 markdown: kramdown
