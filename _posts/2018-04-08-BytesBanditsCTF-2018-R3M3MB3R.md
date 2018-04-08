@@ -28,20 +28,3 @@ flag{S0metim3s_it5_b3tter_to_4_GET}
 ```
 They changed the file's name later on, and it became `S3cR3T_FL4G_da456sds.txt`. Not sure why, and it might have changed some more, but that's how it was called initially anyway. 
 With code execution, you could of course download `index.php` as well by doing `cat /var/www/html/index.php|base64`, but [there was nothing interesting in it](/medias/bytesbandit18/index.txt).
-
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "BYTESBANDIT18R3M"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://phi0-1.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
-{% endif %}
