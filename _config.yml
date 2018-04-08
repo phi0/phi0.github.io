@@ -55,3 +55,5 @@ enabled:
 
 disqus:
   shortname: phi0
+
+google_analytics: UA-117119736-1

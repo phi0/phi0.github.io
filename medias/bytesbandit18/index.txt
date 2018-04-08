@@ -1,0 +1,38 @@
+<html>
+
+<style>
+body {
+text-align:center;
+
+}
+</style>
+<?php 
+
+$file=$_GET['f'];
+
+if(isset($file))
+{
+
+    if(strpos($file,"index.php") !== false ){
+    die('<iframe width="560" height="315" src="https://www.youtube.com/embed/NVBVZ0zWJSo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    
+    }
+
+
+    try {
+	include($file);
+	 echo " <h1>  file  included </h1>";
+    }
+
+    catch(Exception $e) {
+          echo "<h1>WOW, So empty!</h1> ";
+}
+}
+else{
+	echo "<h1>WOW, So empty!</h1>";
+}
+ 
+
+
+?>
+</html>
