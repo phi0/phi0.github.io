@@ -2,6 +2,7 @@
 layout: post
 title: BackdoorCTF 2018 - DIGILANT-ADMIN
 author: crisis
+comments: true
 ---
 
 Here's my solution for the DIGILANT-ADMIN challenge of the *2018 BackdoorCTF*. I'm not sure wether I got the flag the intended way since there has been quite a few technical problems during the event, but here's how I did it anyway.

@@ -6,7 +6,7 @@ author:
 comments: true
 ---
 I also participated in the Byte Bandits CTF this weekend. This web challenge encountered somes issues and was modified a few times from what I saw, so other people might have not done it the way I have. But anyway, here's how I did it.  
-The vulnerability was a local file inclusion (LFI). It was easy to find: if you visited `http://web.euristica.in/R3M3MB3R/index.php?f=../../../etc/passwd`, you would get the passwd file. The tricky thing was that `index.php` was filtered in the URL, so it was not possible to directly include it. Some PHP wrappers were activated on the server, so I managed to download the `eg.php` file that way ([http://web.euristica.in/R3M3MB3R/index.php?f=php://filter/read=convert.base64-encode/resource=eg.php]()), but nothing interesting was in it, and because of the filter you couldn't retrieve the index like this.  
+The vulnerability was a local file inclusion (LFI). It was easy to find: if you visited `http://web.euristica.in/R3M3MB3R/index.php?f=../../../etc/passwd`, you would get the passwd file. The tricky thing was that `index.php` was filtered in the URL, so it was not possible to directly include it. Some PHP wrappers were activated on the server, so I managed to download the `eg.php` file that way ([http://web.euristica.in/R3M3MB3R/index.php?f=php://filter/read=convert.base64-encode/resource=eg.php](http://web.euristica.in/R3M3MB3R/index.php?f=php://filter/read=convert.base64-encode/resource=eg.php)), but nothing interesting was in it, and because of the filter you couldn't retrieve the index like this.  
 After some time spent trying, and failing, to bypass that filter, I decided to try something else. My next idea was to include some log files from the server, in which I could inject some PHP code that would be executed when included. I've recently [read a bit on the subject](http://ly0n.me/2015/10/19/lfi-beyond-procselfenviron/), and I found several files:  
 ```
 http://web.euristica.in/R3M3MB3R/index.php?f=../../../var/log/apache2/access.log
@@ -28,3 +28,20 @@ flag{S0metim3s_it5_b3tter_to_4_GET}
 ```
 They changed the file's name later on, and it became `S3cR3T_FL4G_da456sds.txt`. Not sure why, and it might have changed some more, but that's how it was called initially anyway. 
 With code execution, you could of course download `index.php` as well by doing `cat /var/www/html/index.php|base64`, but [there was nothing interesting in it](/medias/bytesbandit18/index.txt).
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "BYTESBANDIT18R3M"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://phi0-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+{% endif %}
