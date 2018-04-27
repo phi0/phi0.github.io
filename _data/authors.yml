@@ -1,11 +1,27 @@
-crisis:
+# Authors
+
+Crisis:
   name: Crisis
-  github: Qrisis
+  twitter: "@Crisiswic"
+  picture: /medias/others/crisis.jpg
+  links:
+    - title: GitHub
+      url: https://github.com/Qrisis
+      icon: fab fa-github-square
+    - title: Twitter
+      url: https://twitter.com/Crisiswic
+      icon: fab fa-twitter-square
 
-onionpsy:
+OnionPsy:
   name: onionpsy
-  github: onionpsy
+  links:
+    - title: GitHub
+      url: https://github.com/onionpsy
+      icon: fab fa-github-square
 
-bafs:
+BafS:
   name: BafS
-  github: BafS
+  links:
+    - title: GitHub
+      url: https://github.com/BafS
+      icon: fab fa-github-square
