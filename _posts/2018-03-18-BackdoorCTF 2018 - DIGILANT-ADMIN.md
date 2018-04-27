@@ -1,8 +1,8 @@
 ---
-layout: post
 title: BackdoorCTF 2018 - DIGILANT-ADMIN
-author: crisis
-comments: true
+author: Crisis
+categories:
+  - hacking
 ---
 
 Here's my solution for the DIGILANT-ADMIN challenge of the *2018 BackdoorCTF*. I'm not sure wether I got the flag the intended way since there has been quite a few technical problems during the event, but here's how I did it anyway.
@@ -19,10 +19,10 @@ And report messages to the admin :
 ![](https://i.imgur.com/KOyK8oe.png)
 
 The other interesting thing was the "Giveme flag" page, which stated:
+
 ```
 No admin No flag
 ```
-
 
 So my first idea was of course to try and find an exploitable XSS to log in as admin. I tried a few things, but it wasn't executing on the URL where you could see your post:
 ```
