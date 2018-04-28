@@ -1,9 +1,8 @@
 ---
-title: INS'hAck 2018 - Crimemail
+title: INShAck 2018 - Crimemail
 author: Crisis
 categories:
-  - hacking
-  - INS'hAck
+  - websec
 ---
 This is the first of the two web challenges of the INS'hAck CTF that I managed to flag this weekend. Here is its
 descriptions:

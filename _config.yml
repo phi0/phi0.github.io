@@ -16,9 +16,9 @@
 title: phi0
 email: phi0@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Phi0 Team Blog
+  Phi0 Team's Blog
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://phi0.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: phi0
 
 # Build settings
